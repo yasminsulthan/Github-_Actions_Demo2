@@ -1,0 +1,16 @@
+name: Numbers
+'on': push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Even Numbers"
+  test-job: 
+    needs:
+      - my-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: sample-test
+        run: |
+         ls -al
