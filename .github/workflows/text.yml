@@ -1,8 +1,8 @@
 name: numbers
 'on': push
-jobs: null
-my-job: null
+jobs: 
+   my-job:
 runs-on: ubuntu-latest
 steps: null
 '-name': My first step
-run: echo "Even Numbers!".
+run: echo "Even Numbers!"
