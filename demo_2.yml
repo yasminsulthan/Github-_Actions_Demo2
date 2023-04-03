@@ -1,0 +1,26 @@
+
+object
+{7}
+name
+:
+Example
+on
+:
+push
+jobs
+{1}
+job_1
+:
+null
+runs on
+:
+ubuntu-latest
+steps
+:
+null
+-name
+:
+My first step
+run
+:
+echo This is the first step of my first job.
