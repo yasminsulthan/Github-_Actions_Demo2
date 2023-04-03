@@ -1,9 +1,0 @@
-name: example
-'on': push
-jobs:
-  my-job:
-runs-on: ubuntu-latest
-steps:
-  - name: My first step
-run: This is my first step of first job.
-
