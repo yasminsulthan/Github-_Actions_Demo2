@@ -1,8 +1,0 @@
-name: numbers
-'on': push
-jobs: 
-   my-job:
-runs-on: ubuntu-latest
-steps: null
-'-name': My first step
-run: echo "Even Numbers!"
