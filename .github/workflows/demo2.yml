@@ -1,15 +1,22 @@
 name: Numbers
 'on': push
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
         run: echo "Even Numbers"
-  test-job: 
+  test: 
     needs:
-      - my-job
+      - build
     runs-on: ubuntu-latest
     steps:
       - name: sample-test
         run: echo "Odd Numbers"
+  deploy: 
+    needs:
+      - test
+    runs-on: ubuntu-latest
+    steps:
+      - name: sample-test
+        run: echo "Result"
