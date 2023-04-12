@@ -1,11 +1,13 @@
 name: Numbers
-'on': push
+'on': push      
 jobs:
   build:
     runs-on: ubuntu-latest
+  
+    #this step is for print the even number
     steps:
       - name: my-step
-        run: echo "Even Numbers"
+        run: echo "Even Numbers"  
   test: 
     needs:
       - build
