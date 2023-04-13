@@ -1,5 +1,4 @@
-
-name: comment example
+name: commentexample
 'on': push
 jobs:
   example:
