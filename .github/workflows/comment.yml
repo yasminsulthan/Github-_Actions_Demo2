@@ -1,0 +1,13 @@
+name: comment example
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create comment
+        uses: jungwinter/comment@v1
+        id: create
+        with:
+          type: create
+          body: "- [ ] Run tests"
+          issue_number: '1'
+          token: ${{ secrets.GITHUB_TOKEN }}
