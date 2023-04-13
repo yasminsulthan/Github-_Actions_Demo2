@@ -1,5 +1,5 @@
 name: commentexample
-'on': push
+on: push
 jobs:
   example:
     runs-on: ubuntu-latest
@@ -9,7 +9,7 @@ jobs:
         id: create
         with:
           type: create
-          body: "-[ ] Run tests"
+          body: "- [ ] Run tests"
           issue_number: '1'
           token: ${{ secrets.GITHUB_TOKEN }}
 
