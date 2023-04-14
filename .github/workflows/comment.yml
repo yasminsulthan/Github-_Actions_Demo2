@@ -1,11 +1,11 @@
 name: comment example
-on: pull_request
+on: push
 jobs:
   example:
     runs-on: ubuntu-latest
     steps:
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: yasminsulthan/Github-_Actions_Demo2@v1
         id: create
         with:
           type: create
