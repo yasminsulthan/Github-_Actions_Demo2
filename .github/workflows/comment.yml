@@ -11,4 +11,4 @@ jobs:
           type: create
           body: "- [ ] Run tests"
           issue-number: '1'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          
