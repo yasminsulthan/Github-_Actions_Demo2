@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create comment
-        uses: yasminsulthan/Github-_Actions_Demo2@v2.303.0
+        uses: ./
         with:
           type: create
           body: "- [ ] Run tests"
-          issue_number: '1'
+          issue-number: '1'
           token: ${{ secrets.GITHUB_TOKEN }}
