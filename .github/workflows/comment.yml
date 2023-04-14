@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create comment
-        uses: yasminsulthan/Github-_Actions_Demo2-comment@v3
+        uses: yasminsulthan/Github-_Actions_Demo2-[create]comment@v3
         id: create
         with:
           type: create
