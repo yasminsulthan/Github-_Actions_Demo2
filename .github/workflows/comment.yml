@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create comment
-        uses: yasminsulthan/Github-_Actions_Demo2/issue-comment@v1
-        id: create
+        uses: yasminsulthan/Github-_Actions_Demo2@v3
         with:
           type: create
           body: "- [ ] Run tests"
