@@ -4,9 +4,9 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - name: Create comment
-        uses: ./
-        with:
+     - uses: actions/checkout@v3
+     - name: Create comment
+       with:
           type: create
           body: "- [ ] Run tests"
           issue-number: '1'
